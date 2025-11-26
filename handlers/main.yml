@@ -10,6 +10,7 @@
 - name: Rerun setup
   ansible.builtin.setup:
   listen: restart docker
+  become: false
 
 - name: apt update
   ansible.builtin.apt:
